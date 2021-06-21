@@ -11,16 +11,16 @@ public class Steuerung {
 	public Steuerung() {
 		dieGUI = new GUI(this);
 		String[] fachSchueler1 = {"Mathe", "Deutsch", "Englisch", "Informatik", "Sport", "Ethik", "Wirtschaft", "Italienisch", "Geschichte", "Chemie", "Computertechnik"};
-		String[] fachSchueler2 = {"Mathe", "Deutsch", "Englisch", "Mechatronik", "Sport", "Religion", "Physik", "Französisch"};
-		String[] fachSchueler3 = {"Alte Runen", "Arithmantik", "Astronomie", "Geschichte der Zauberei", "Muggelkunde", "V.g.d.d.K.", "Zaubertränke"};
+		String[] fachSchueler2 = {"Mathe", "Deutsch", "Englisch", "Mechatronik", "Sport", "Religion", "Physik", "FranzÃ¶sisch"};
+		String[] fachSchueler3 = {"Alte Runen", "Arithmantik", "Astronomie", "Geschichte der Zauberei", "Muggelkunde", "V.g.d.d.K.", "ZaubertrÃ¤nke"};
 		String[] fachSchueler4 = {"Physik", "Mathe", "Chemie", "Biologie", "Sport", "Handwerken", "Englisch"};
 		String[] fachSchueler5 = {"Deutsch", "Geschichte", "Philosophie", "Literatur", "Griechisch"};
-		derSchueler[0] = new Schueler("Can Cetin", 4, fachSchueler1, 33);
+		derSchueler[0] = new Schueler("Jan Hofer", 4, fachSchueler1, 33);
 		derSchueler[1] = new Schueler("Max Mustermann", 5, fachSchueler2, 24);
 		derSchueler[2] = new Schueler("Harry Potter", 4, fachSchueler3, 21);
 		derSchueler[3] = new Schueler("Peter Parker", 2, fachSchueler4, 21);
 		derSchueler[4] = new Schueler("Karl May", 6, fachSchueler5, 15);
-		this.schuelerIDS = new int[] {23112001, 14032003, 31071980, 10082004, 25021842, 42};
+		this.schuelerIDS = new int[] {14122000, 14032003, 31071980, 10082004, 25021842, 42};
 	}
 
 	public String[] getFaecherListe(String schueler) {
