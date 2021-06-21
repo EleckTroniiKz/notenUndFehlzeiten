@@ -35,7 +35,7 @@ public class GUI extends JFrame{
 	private JButton schriftlicheNotenBtn;
 	private JButton fehlzeitenBtn;
 
-	// ------- M¸ndliche Noten -------
+	// ------- M√ºndliche Noten -------
 	private JButton zeigeMuendlicheNotenBtn;
 	private JButton durchschnittMuendlicheNotenBtn;
 	private JLabel muendlicheNotenSchnittLbl;
@@ -62,7 +62,7 @@ public class GUI extends JFrame{
 	private JLabel DatumLbl;
 
 	// ---------Lehrer-Menue-----------
-	private JComboBox<String> schuelerListe; //Liste mit allen Sch¸lern
+	private JComboBox<String> schuelerListe; //Liste mit allen Sch√ºlern
 	private JButton addNoteBtn;
 	private String ausgewaehlterSchueler;
 	private JButton deleteNoteBtn;
@@ -144,7 +144,7 @@ public class GUI extends JFrame{
 		logInButton = new JButton("Anmelden");
 		logInButton.setBounds(165, 147, 100, 23);
 
-		muendlicheNotenBtn = new JButton("M¸ndliche Noten");
+		muendlicheNotenBtn = new JButton("M√ºndliche Noten");
 		muendlicheNotenBtn.setBounds(140, 80, 150, 23);
 
 		schriftlicheNotenBtn = new JButton("Schriftliche Noten");
@@ -156,10 +156,10 @@ public class GUI extends JFrame{
 		fehlzeitenLbl = new JLabel();
 		fehlzeitenLbl.setBounds(220, 200, 400, 20);
 
-		zeigeMuendlicheNotenBtn = new JButton("M¸ndliche Noten anzeigen");
+		zeigeMuendlicheNotenBtn = new JButton("M√ºndliche Noten anzeigen");
 		zeigeMuendlicheNotenBtn.setBounds(200, 50, 200, 23);
 
-		durchschnittMuendlicheNotenBtn = new JButton("Durchschnitt m¸ndliche Noten");
+		durchschnittMuendlicheNotenBtn = new JButton("Durchschnitt m√ºndliche Noten");
 		durchschnittMuendlicheNotenBtn.setBounds(20, 200, 215, 23);
 
 		muendlicheNotenSchnittLbl = new JLabel();
@@ -233,7 +233,7 @@ public class GUI extends JFrame{
 		backButton = new JButton("Ausloggen");
 		backButton.setBounds(280, 230, 150, 23);
 		
-		deleteFZBtn = new JButton("Lˆschen");
+		deleteFZBtn = new JButton("L√∂schen");
 		deleteFZBtn.setBounds(140, 200, 150,23);
 
 		vonDatumFeld[0].setBounds(40, 120, 50, 20);
@@ -253,7 +253,7 @@ public class GUI extends JFrame{
 		DatumLbl = new JLabel("Tag              Monat        Jahr");
 		DatumLbl.setBounds(40, 150, 200, 20);
 
-		addNoteBtn = new JButton("F¸ge Note hinzu");
+		addNoteBtn = new JButton("F√ºge Note hinzu");
 		addNoteBtn.setBounds(140, 110, 150,23);
 
 		ausgewaehlterSchuelerLbl = new JLabel();
@@ -307,15 +307,15 @@ public class GUI extends JFrame{
 					}
 				}
 				else if(btn == schriftlicheNotenBtn) {
-					schlieﬂeEingeloggt();
+					schlie√üeEingeloggt();
 					zeigeSchriftlicheNotenSeite();
 				}
 				else if(btn == fehlzeitenBtn) {
-					schlieﬂeEingeloggt();
+					schlie√üeEingeloggt();
 					zeigeFehlzeitenSeite();
 				}
 				else if(btn == muendlicheNotenBtn) {
-					schlieﬂeEingeloggt();
+					schlie√üeEingeloggt();
 					zeigeMuendlicheNotenSeite();
 				}
 				else if(btn == zeigeMuendlicheNotenBtn) {
@@ -353,7 +353,7 @@ public class GUI extends JFrame{
 					case "Hauptmenue":
 						aktuelleSeite = "Log-In";
 						contentPane.remove(backButton);
-						schlieﬂeEingeloggt();
+						schlie√üeEingeloggt();
 						Title.setFont(new Font(("Times New Roman"), Font.PLAIN, 18));
 						Title.setBounds(177, 35, 134, 14);
 						contentPane.add(logInButton);
@@ -362,49 +362,49 @@ public class GUI extends JFrame{
 						break;
 					case "Fehlzeiten":
 						aktuelleSeite = "Hauptmenue";
-						schlieﬂeFehlzeitenSeite();
+						schlie√üeFehlzeitenSeite();
 						zeigeEingeloggt();
 						reloadFrame();
 						break;
 					case "Muendlich":
 						aktuelleSeite = "Hauptmenue";
-						schlieﬂeMuendlicheNotenSeite();
+						schlie√üeMuendlicheNotenSeite();
 						zeigeEingeloggt();
 						reloadFrame();
 						break;
 					case "Schriftlich":
 						aktuelleSeite = "Hauptmenue";
-						schlieﬂeSchriftlicheNotenSeite();
+						schlie√üeSchriftlicheNotenSeite();
 						zeigeEingeloggt();
 						reloadFrame();
 						break;
 					case "Lehrer":
 						aktuelleSeite = "Log-In";
-						schlieﬂeLehrerMenue();
+						schlie√üeLehrerMenue();
 						zeigeLogIn();
 						reloadFrame();
 						break;
 					case "AddNote":
 						aktuelleSeite = "Lehrer";
-						schlieﬂeAddNote();
+						schlie√üeAddNote();
 						zeigeLehrerMenue();
 						reloadFrame();
 						break;
 					case "DeleteNote":
 						aktuelleSeite = "Lehrer";
-						schlieﬂeDeleteNoten();
+						schlie√üeDeleteNoten();
 						zeigeLehrerMenue();
 						reloadFrame();
 						break;
 					case "AddFehlzeit":
 						aktuelleSeite = "Lehrer";
-						schlieﬂeAddFehlzeit();
+						schlie√üeAddFehlzeit();
 						zeigeLehrerMenue();
 						reloadFrame();
 						break;
 					case "DeleteFehlzeit":
 						aktuelleSeite = "Lehrer";
-						schlieﬂeDeleteFehlzeit();
+						schlie√üeDeleteFehlzeit();
 						zeigeLehrerMenue();
 						reloadFrame();
 						break;
@@ -429,7 +429,7 @@ public class GUI extends JFrame{
 				}
 				else if(btn == deleteNoteBtn) {
 					ausgewaehlterSchueler = schuelerListe.getSelectedItem().toString();
-					schlieﬂeLehrerMenue();
+					schlie√üeLehrerMenue();
 					zeigeDeleteNoten();
 					reloadFrame();
 				}
@@ -442,18 +442,18 @@ public class GUI extends JFrame{
 				}
 				else if(btn == addFehlzeitBtn) {
 					ausgewaehlterSchueler = schuelerListe.getSelectedItem().toString();
-					schlieﬂeLehrerMenue();
+					schlie√üeLehrerMenue();
 					zeigeAddFehlzeit();
 					reloadFrame();
 				}
 				else if(btn == deleteFehlzeitBtn) {
 					ausgewaehlterSchueler = schuelerListe.getSelectedItem().toString();
-					schlieﬂeLehrerMenue();
+					schlie√üeLehrerMenue();
 					zeigeDeleteFehlzeit();
 					reloadFrame();
 				}
 				else if(btn == deleteFZBtn) {
-					schlieﬂeDeleteFehlzeit();
+					schlie√üeDeleteFehlzeit();
 					zeigeLehrerMenue();
 					clickDeleteFehlzeit();
 					reloadFrame();
@@ -527,7 +527,7 @@ public class GUI extends JFrame{
 		contentPane.add(deleteFehlzeitBtn);
 	}
 
-	private void schlieﬂeLehrerMenue() {
+	private void schlie√üeLehrerMenue() {
 		contentPane.remove(schuelerListe);
 		contentPane.remove(addNoteBtn);
 		contentPane.remove(deleteNoteBtn);
@@ -537,7 +537,7 @@ public class GUI extends JFrame{
 
 	private void zeigeAddNote() {
 		aktuelleSeite = "AddNote";
-		Title.setText("Sch¸ler: " + ausgewaehlterSchueler);
+		Title.setText("Sch√ºler: " + ausgewaehlterSchueler);
 		
 		contentPane.add(ausgewaehlterSchuelerLbl);
 		contentPane.add(notenPunkteLbl);
@@ -551,12 +551,12 @@ public class GUI extends JFrame{
 		contentPane.add(faecherListe);
 		contentPane.add(notenDatumLbl);
 		contentPane.add(istSchriftlichCheckBox);
-		backButton.setText("Zur¸ck");
+		backButton.setText("Zur√ºck");
 		contentPane.add(backButton);
 		
 	}
 
-	private void schlieﬂeAddNote() {
+	private void schlie√üeAddNote() {
 		contentPane.remove(ausgewaehlterSchuelerLbl);
 		contentPane.remove(notenPunkteLbl);
 		contentPane.remove(notenPunkteFeld);
@@ -643,21 +643,21 @@ public class GUI extends JFrame{
 		}
 		if(dieSteuerung.pruefeLogIn(name, Integer.parseInt(pin))) {
 			contentPane.remove(logInButton);
-			schlieﬂeLogInMenue();
+			schlie√üeLogInMenue();
 			zeigeEingeloggt();
 			reloadFrame();
 		}
 		else{
 			if(name.equals("root") && pin.equals("42")){
 				contentPane.remove(logInButton);
-				schlieﬂeLogInMenue();
+				schlie√üeLogInMenue();
 				zeigeLehrerMenue();
 				reloadFrame();
 			}
 		}
 	}
 
-	private void schlieﬂeLogInMenue() {
+	private void schlie√üeLogInMenue() {
 		contentPane.remove(logInNameLbl);
 		contentPane.remove(logInPinLbl);
 		contentPane.remove(logInNameFeld);
@@ -683,7 +683,7 @@ public class GUI extends JFrame{
 		aktuelleSeite = "Hauptmenue";
 	}
 
-	private void schlieﬂeEingeloggt() {
+	private void schlie√üeEingeloggt() {
 		contentPane.remove(muendlicheNotenBtn);
 		contentPane.remove(schriftlicheNotenBtn);
 		contentPane.remove(fehlzeitenBtn);
@@ -692,7 +692,7 @@ public class GUI extends JFrame{
 	}
 
 	private void zeigeMuendlicheNotenSeite() {
-		Title.setText("M¸ndliche Noten");
+		Title.setText("M√ºndliche Noten");
 
 
 		contentPane.add(faecherListe);
@@ -700,11 +700,11 @@ public class GUI extends JFrame{
 		contentPane.add(schuelerLbl);
 		contentPane.add(durchschnittMuendlicheNotenBtn);
 		contentPane.add(backButton);
-		backButton.setText("Zur¸ck");
+		backButton.setText("Zur√ºck");
 		aktuelleSeite = "Muendlich";
 	}
 
-	private void schlieﬂeMuendlicheNotenSeite() {
+	private void schlie√üeMuendlicheNotenSeite() {
 		contentPane.remove(faecherListe);
 		contentPane.remove(zeigeMuendlicheNotenBtn);
 		contentPane.remove(schuelerLbl);
@@ -723,11 +723,11 @@ public class GUI extends JFrame{
 		contentPane.add(schuelerLbl);
 		contentPane.add(durchschnittSchriftlicheNotenBtn);
 		contentPane.add(backButton);
-		backButton.setText("Zur¸ck");
+		backButton.setText("Zur√ºck");
 		aktuelleSeite = "Schriftlich";
 	}
 
-	private void schlieﬂeSchriftlicheNotenSeite() {
+	private void schlie√üeSchriftlicheNotenSeite() {
 		contentPane.remove(faecherListe);
 		contentPane.remove(zeigeSchriftlicheNotenBtn);
 		contentPane.remove(schuelerLbl);
@@ -756,11 +756,11 @@ public class GUI extends JFrame{
 		contentPane.add(bisLbl);
 		contentPane.add(DatumLbl);
 
-		backButton.setText("Zur¸ck");
+		backButton.setText("Zur√ºck");
 		aktuelleSeite = "Fehlzeiten";
 	}
 
-	private void schlieﬂeFehlzeitenSeite() {
+	private void schlie√üeFehlzeitenSeite() {
 		contentPane.remove(schuelerLbl);
 		contentPane.remove(zeigeFehlzeitenBtn);
 
@@ -854,7 +854,7 @@ public class GUI extends JFrame{
 	}
 
 	private void clickAddNote() {
-		schlieﬂeLehrerMenue();
+		schlie√üeLehrerMenue();
 		zeigeAddNote();
 		aktuelleSeite = "AddNote";
 	}
@@ -878,7 +878,7 @@ public class GUI extends JFrame{
 	private void clickDeleteNote() {
 		
 		dieSteuerung.deleteNote(notenListe.getSelectedIndex(), ausgewaehlterSchueler);
-		schlieﬂeDeleteNoten();
+		schlie√üeDeleteNoten();
 		zeigeLehrerMenue();
 		reloadFrame();
 	}
@@ -892,7 +892,7 @@ public class GUI extends JFrame{
 		contentPane.add(backButton);
 	}
 	
-	private void schlieﬂeDeleteNoten() {
+	private void schlie√üeDeleteNoten() {
 		contentPane.remove(notenListe);
 		contentPane.remove(deleteBtn);
 	}
@@ -915,7 +915,7 @@ public class GUI extends JFrame{
 		contentPane.add(fzZustandFeld);
 	}
 	
-	private void schlieﬂeAddFehlzeit() {
+	private void schlie√üeAddFehlzeit() {
 		contentPane.remove(addFZBtn);
 		contentPane.remove(datumFZ);
 		for(int i = 0; i < 3; i++) {
@@ -945,7 +945,7 @@ public class GUI extends JFrame{
 		
 	}
 	
-	private void schlieﬂeDeleteFehlzeit() {
+	private void schlie√üeDeleteFehlzeit() {
 		contentPane.remove(deleteFZBtn);
 		contentPane.remove(fzListe);
 	}
@@ -957,7 +957,7 @@ public class GUI extends JFrame{
 		String fach = faecherListe.getSelectedItem().toString();
 		int stunde = Integer.parseInt(stundeFeld.getText().trim());
 		dieSteuerung.setFehlzeit(datum, zustand, fach, schueler, Integer.parseInt(fehlzeit), stunde);
-		schlieﬂeAddFehlzeit();
+		schlie√üeAddFehlzeit();
 		zeigeLehrerMenue();
 	}
 	
