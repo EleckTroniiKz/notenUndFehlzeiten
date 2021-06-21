@@ -22,10 +22,10 @@ public class Schueler {
 		this.dieAnwesenheit = new Anwesenheit[this.aAnzAnwesenheit];
 		this.dieNote = new Note[this.aAnzNoten];
 		if(Name.equals("Can Cetin")) {
-			this.dieAnwesenheit[0] = new Anwesenheit(1, "01-01-2020", 1, 15, "versp‰tet");
-			this.dieAnwesenheit[1] = new Anwesenheit(3, "02-02-2021", 4, 20, "versp‰tet");
-			this.dieAnwesenheit[2] = new Anwesenheit(1, "03-03-2021", 1, 12, "versp‰tet");
-			this.dieAnwesenheit[3] = new Anwesenheit(2, "04-04-2021", 1, 4, "versp‰tet");
+			this.dieAnwesenheit[0] = new Anwesenheit(1, "01-01-2020", 1, 15, "versp√§tet");
+			this.dieAnwesenheit[1] = new Anwesenheit(3, "02-02-2021", 4, 20, "versp√§tet");
+			this.dieAnwesenheit[2] = new Anwesenheit(1, "03-03-2021", 1, 12, "versp√§tet");
+			this.dieAnwesenheit[3] = new Anwesenheit(2, "04-04-2021", 1, 4, "versp√§tet");
 			
 			this.dieNote[0] = new Note(0, 13, "15-02-2021", true);
 			this.dieNote[1] = new Note(0, 15, "16-03-2021", false);
@@ -73,11 +73,11 @@ public class Schueler {
 
 		}
 		else if(Name.equals("Max Mustermann")) {
-			this.dieAnwesenheit[0] = new Anwesenheit(1, "01-01-2021", 1, 15, "versp‰tet");
-			this.dieAnwesenheit[1] = new Anwesenheit(3, "02-02-2021", 4, 20, "versp‰tet");
-			this.dieAnwesenheit[2] = new Anwesenheit(1, "03-03-2021", 1, 12, "versp‰tet");
-			this.dieAnwesenheit[3] = new Anwesenheit(2, "04-04-2021", 1, 4, "versp‰tet");
-			this.dieAnwesenheit[4] = new Anwesenheit(2, "05-05-2021", 1, 2, "versp‰tet");
+			this.dieAnwesenheit[0] = new Anwesenheit(1, "01-01-2021", 1, 15, "versp√§tet");
+			this.dieAnwesenheit[1] = new Anwesenheit(3, "02-02-2021", 4, 20, "versp√§tet");
+			this.dieAnwesenheit[2] = new Anwesenheit(1, "03-03-2021", 1, 12, "versp√§tet");
+			this.dieAnwesenheit[3] = new Anwesenheit(2, "04-04-2021", 1, 4, "versp√§tet");
+			this.dieAnwesenheit[4] = new Anwesenheit(2, "05-05-2021", 1, 2, "versp√§tet");
 
 			this.dieNote[0] = new Note(0, 10, "01-03-2021", true);
 			this.dieNote[1] = new Note(0, 11, "05-05-2021", false);
@@ -113,7 +113,7 @@ public class Schueler {
 		}
 		else if(Name.equals("Harry Potter")) {
 			this.dieAnwesenheit[0] = new Anwesenheit(1, "12-02-1992", 1, 45, "fehlend");
-			this.dieAnwesenheit[1] = new Anwesenheit(3, "13-03-1994", 4, 8, "versp‰tet");
+			this.dieAnwesenheit[1] = new Anwesenheit(3, "13-03-1994", 4, 8, "versp√§tet");
 			this.dieAnwesenheit[2] = new Anwesenheit(1, "14-04-1993", 1, 45, "fehlend");
 			this.dieAnwesenheit[3] = new Anwesenheit(3, "15-05-1994", 4, 45, "fehlend");
 
@@ -146,8 +146,8 @@ public class Schueler {
 			this.dieNote[20] = new Note(6, 8, "30-04-1994", false);
 		}
 		else if(Name.equals("Peter Parker")){
-			this.dieAnwesenheit[0] = new Anwesenheit(1, "02-02-2021", 1, 2, "versp‰tet");
-			this.dieAnwesenheit[1] = new Anwesenheit(3, "07-03-2021", 4, 4, "versp‰tet");
+			this.dieAnwesenheit[0] = new Anwesenheit(1, "02-02-2021", 1, 2, "versp√§tet");
+			this.dieAnwesenheit[1] = new Anwesenheit(3, "07-03-2021", 4, 4, "versp√§tet");
 
 			this.dieNote[0] = new Note(0, 14, "01-02-2021", true);
 			this.dieNote[1] = new Note(0, 13, "05-04-2021", false);
@@ -179,11 +179,11 @@ public class Schueler {
 		}
 		else if(Name.equals("Karl May")) {
 			this.dieAnwesenheit[0] = new Anwesenheit(1, "12-02-1857", 1, 45, "fehlend");
-			this.dieAnwesenheit[1] = new Anwesenheit(3, "13-03-1859", 4, 8, "versp‰tet");
+			this.dieAnwesenheit[1] = new Anwesenheit(3, "13-03-1859", 4, 8, "versp√§tet");
 			this.dieAnwesenheit[2] = new Anwesenheit(1, "14-04-1859", 1, 45, "fehlend");
 			this.dieAnwesenheit[3] = new Anwesenheit(3, "15-05-1858", 4, 45, "fehlend");
-			this.dieAnwesenheit[4] = new Anwesenheit(1, "16-05-1858", 1, 5, "versp‰tet");
-			this.dieAnwesenheit[5] = new Anwesenheit(3, "17-06-1858", 4, 8, "versp‰tet");
+			this.dieAnwesenheit[4] = new Anwesenheit(1, "16-05-1858", 1, 5, "versp√§tet");
+			this.dieAnwesenheit[5] = new Anwesenheit(3, "17-06-1858", 4, 8, "versp√§tet");
 
 			this.dieNote[0] = new Note(0, 12, "01-02-1858", true);
 			this.dieNote[1] = new Note(0, 13, "05-04-1858", false);
@@ -233,7 +233,7 @@ public class Schueler {
 				boolWert = "Schriftlich";
 			}
 			else {
-				boolWert = "M¸ndlich";
+				boolWert = "M√ºndlich";
 			}
 			String line = Integer.toString(dieNote[i].getPunkte()) + " "  + dieNote[i].getDatum() + " " + boolWert + " " + fachIDtoName(dieNote[i].getFachID()) ;
 			arr[i] = line;
@@ -410,7 +410,7 @@ public class Schueler {
 		return false;
 	}
 
-	//G¸ltigkeit des Datums
+	//G√ºltigkeit des Datums
 	private boolean checkValidityOfDates(int vTag, int vMonat, int vJahr, int bTag, int bMonat, int bJahr) {
 		String vonStatus = "invalid";
 		String bisStatus = "invalid";
