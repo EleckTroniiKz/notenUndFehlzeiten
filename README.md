@@ -1,5 +1,5 @@
 # notenUndFehlzeiten
-This is a programm that can manage Grades and Absenteeism. As a student you can view your grades and absent-times. 
+This is a programm that can manage Grades and Absenteeism. As a student you can view your grades and absent-times. This is the code to a Task from an A-Levels Tast in Computer Science.
 
 Student-Users
 Name			Pin
